@@ -12,4 +12,8 @@ public class Personne {
 		lastname = newLastname;
 		postalAdress = newAdress;
 	}
+	public String displayName() {
+		String fullName = this.name + "" + this.lastname.toUpperCase();
+		return fullName;
+	}
 }
