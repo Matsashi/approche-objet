@@ -13,7 +13,30 @@ public class Personne {
 		postalAdress = newAdress;
 	}
 	public String displayName() {
-		String fullName = this.name + "" + this.lastname.toUpperCase();
+		return name;
+	}
+	public String displayLastname() {
+		return lastname;
+	}
+	public AdressePostale displayAdress() {
+		return postalAdress;
+	}
+	public String displayFullName() {
+		String fullName = this.name + " " + this.lastname.toUpperCase();
+		System.out.println(fullName);
 		return fullName;
 	}
+	public String changeLastName(String newLastName) {
+		lastname = newLastName;
+		return this.displayFullName();
+	}
+	public String changeName(String newName) {
+		name = newName;
+		return this.displayFullName();
+	}
+	public String changeAdress(AdressePostale newAdress) {
+		postalAdress = newAdress;
+		return this.displayFullName();
+	}
+	
 }

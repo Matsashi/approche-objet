@@ -9,6 +9,7 @@ public class TestPersonne {
 		AdressePostale maison2 = new AdressePostale(5, "boulevard des maréchaux", 44100, "Nantes");
 		Personne personne1 = new Personne("Matthew", "Pottier", maison1);
 		Personne personne2 = new Personne("Test", "Ostérone", maison2);
+		
 
 	}
 
